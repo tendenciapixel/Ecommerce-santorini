@@ -65,8 +65,36 @@
         "heading_font": "brand"
       }
     },
+    "banner_responsive_Kchgrp": {
+      "type": "banner-responsive",
+      "blocks": {
+        "slide_jYCRNU": {
+          "type": "slide",
+          "settings": {
+            "image_pc": "shopify://shop_images/10dto_-_BANNER_PC_jpg.jpg",
+            "image_mobile": "shopify://shop_images/10dto_-_BANNER_MOBIL_jpg.jpg",
+            "link": "shopify://collections/baletas-mujer",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide_jYCRNU"
+      ],
+      "name": "Banner principal carrusel",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "heading_font": "brand"
+      }
+    },
     "video_san_8cin7R": {
       "type": "video-san",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
@@ -597,6 +625,7 @@
   },
   "order": [
     "banner_responsive_ttEqg9",
+    "banner_responsive_Kchgrp",
     "video_san_8cin7R",
     "video_BzgPb6",
     "banner_responsive_yz9PXi",
