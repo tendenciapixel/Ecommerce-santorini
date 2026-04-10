@@ -5,8 +5,6 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-{%- assign menu_cta = section.blocks | where: 'type', 'menu_cta' | first -%}
-
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -100,18 +98,6 @@
           </a>
         {%- endif -%}
       </li>
-
-      {%- if forloop.last and menu_cta != blank -%}
-        <li class="menu-cta-item">
-          <a
-            href="{{ menu_cta.settings.url }}"
-            class="menu-cta-button"
-            style="--cta-bg: {{ menu_cta.settings.bg_color }}; --cta-text: {{ menu_cta.settings.text_color }};"
-          >
-            {{ menu_cta.settings.text }}
-          </a>
-        </li>
-      {%- endif -%}
     {%- endfor -%}
   </ul>
 </nav>
