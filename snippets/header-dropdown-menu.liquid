@@ -5,9 +5,9 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+{%- assign menu_cta = section.blocks | where: 'type', 'menu_cta' | first -%}
 
-  {%- assign menu_cta = section.blocks | where: 'type', 'menu_cta' | first -%}
+<nav class="header__inline-menu">
 
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
