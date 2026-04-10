@@ -3004,6 +3004,7 @@ details-disclosure > details {
   left: auto;
   bottom: auto;
   z-index: 10;
+  background-color:#E60023;
 }
 
 .gradient {
