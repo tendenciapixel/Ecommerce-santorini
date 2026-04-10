@@ -1,0 +1,297 @@
+{% schema %}
+{
+  "name": "Banner principal carrusel",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Velocidad autoplay (segundos)",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "default": 5
+    },{
+  "type": "select",
+  "id": "heading_font",
+  "label": "Fuente título",
+  "options": [
+    { "value": "theme", "label": "Tema" },
+    { "value": "brand", "label": "Personalizada" }
+  ],
+  "default": "brand"
+}
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_pc",
+          "label": "Imagen desktop"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tablet",
+          "label": "Imagen tablet"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Imagen móvil"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link del banner"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtítulo"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Texto botón"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Color overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Opacidad overlay",
+          "min": 0,
+          "max": 80,
+          "step": 5,
+          "default": 30
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner principal carrusel",
+      "category": "Banners"
+    }
+  ]
+}
+{% endschema %}
+
+
+<div class="banner-carousel" data-autoplay="{{ section.settings.autoplay }}" data-speed="{{ section.settings.autoplay_speed }}">
+  <div class="banner-track">
+    {% for block in section.blocks %}
+      <div class="banner-slide" {{ block.shopify_attributes }}>
+        <a href="{{ block.settings.link }}" class="banner-link">
+          <picture>
+            {% if block.settings.image_mobile %}
+              <source media="(max-width: 767px)" srcset="{{ block.settings.image_mobile | image_url: width: 800 }}">
+            {% endif %}
+            {% if block.settings.image_tablet %}
+              <source media="(max-width: 1024px)" srcset="{{ block.settings.image_tablet | image_url: width: 1200 }}">
+            {% endif %}
+            {% if block.settings.image_pc %}
+              <img
+  src="{{ block.settings.image_pc | image_url: width: 2000 }}"
+  alt="{{ block.settings.title | escape }}"
+  width="{{ block.settings.image_pc.width }}"
+  height="{{ block.settings.image_pc.height }}"
+  loading="eager">
+            {% endif %}
+          </picture>
+
+          <div class="banner-overlay"
+            style="background-color: {{ block.settings.overlay_color }};
+            opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};">
+          </div>
+
+          <div class="banner-content">
+            <h1 class="
+    {% if section.settings.heading_font == 'brand' %}
+      font-brand
+    {% endif %}
+  ">
+    {{ block.settings.title }}
+  </h1>
+            <p>{{ block.settings.subtitle }}</p>
+            {% if block.settings.button_text != blank %}
+              <span class="banner-btn">{{ block.settings.button_text }}</span>
+            {% endif %}
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="carousel-arrow prev">‹</button>
+  <button class="carousel-arrow next">›</button>
+</div>
+
+
+
+<style>
+.banner-content h1.font-brand {
+  font-family: 'Abhaya', serif;
+  color:#EDEDED;
+}
+
+
+ .banner-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-track {
+  display: flex;
+  transition: transform .6s ease;
+}
+
+.banner-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-overlay,
+.banner-content {
+  position: absolute;
+  inset: 0;
+}
+
+.banner-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  font-size: clamp(26px, 4vw, 52px);
+}
+
+.banner-btn {
+  background: #8B2E2E;
+  padding: 14px 28px;
+  text-transform: uppercase;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  padding: 6px 14px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel-arrow.prev { left: 10px; }
+.carousel-arrow.next { right: 10px; }
+
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('.banner-carousel');
+  if (!carousel) return;
+
+  const track = carousel.querySelector('.banner-track');
+  const slidesOriginal = Array.from(track.children);
+
+  // 🛑 Si solo hay 1 slide, no hay carrusel
+  if (slidesOriginal.length <= 1) return;
+
+  const speed = 600;
+  let index = 1;
+  let isAnimating = false;
+
+  // Clones
+  const firstClone = slidesOriginal[0].cloneNode(true);
+  const lastClone  = slidesOriginal[slidesOriginal.length - 1].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, slidesOriginal[0]);
+
+  const slides = Array.from(track.children);
+
+  const setTransition = (on = true) => {
+    track.style.transition = on ? `transform ${speed}ms ease` : 'none';
+  };
+
+  // Posición inicial correcta
+  setTransition(false);
+  track.style.transform = `translateX(-100%)`;
+
+  const moveTo = (newIndex) => {
+    if (isAnimating) return;
+    isAnimating = true;
+    setTransition(true);
+    track.style.transform = `translateX(-${newIndex * 100}%)`;
+    index = newIndex;
+  };
+
+  track.addEventListener('transitionend', () => {
+    // Si llegamos al clon del primero
+    if (index === slides.length - 1) {
+      setTransition(false);
+      index = 1;
+      track.style.transform = `translateX(-100%)`;
+    }
+
+    // Si llegamos al clon del último
+    if (index === 0) {
+      setTransition(false);
+      index = slides.length - 2;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    isAnimating = false;
+  });
+
+  carousel.querySelector('.next')?.addEventListener('click', () => {
+    moveTo(index + 1);
+  });
+
+  carousel.querySelector('.prev')?.addEventListener('click', () => {
+    moveTo(index - 1);
+  });
+
+  // ▶️ Autoplay seguro
+  if (carousel.dataset.autoplay === 'true') {
+    const interval = carousel.dataset.speed * 1000;
+    setInterval(() => {
+      moveTo(index + 1);
+    }, interval);
+  }
+});
+</script>

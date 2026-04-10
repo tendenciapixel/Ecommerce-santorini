@@ -1,0 +1,169 @@
+{%- style -%}
+  /* Contenedor principal sin márgenes laterales */
+  .carousel-container-{{ section.id }} {
+    position: relative;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  /* El "riel" que mueve las colecciones */
+  .carousel-track-{{ section.id }} {
+    display: flex;
+    gap: {{ section.settings.gap }}px;
+    will-change: transform;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Tamaño de cada colección basado en tus ajustes del editor */
+  .carousel-item-{{ section.id }} {
+    flex: 0 0 calc(100% / {{ section.settings.cols_mobile }} - ({{ section.settings.gap }}px * ({{ section.settings.cols_mobile }} - 1) / {{ section.settings.cols_mobile }}));
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media screen and (min-width: 750px) {
+    .carousel-item-{{ section.id }} {
+      flex: 0 0 calc(100% / {{ section.settings.cols_tablet }} - ({{ section.settings.gap }}px * ({{ section.settings.cols_tablet }} - 1) / {{ section.settings.cols_tablet }}));
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .carousel-item-{{ section.id }} {
+      flex: 0 0 calc(100% / {{ section.settings.cols_desktop }} - ({{ section.settings.gap }}px * ({{ section.settings.cols_desktop }} - 1) / {{ section.settings.cols_desktop }}));
+    }
+  }
+
+  .carousel-item-{{ section.id }} img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Opcional: bordes redondeados */
+    object-fit: cover;
+  }
+
+  /* Estilo de las flechas */
+  .carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ccc;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 20px;
+  }
+
+  .btn-prev-{{ section.id }} { left: 15px; }
+  .btn-next-{{ section.id }} { right: 15px; }
+
+  .carousel-nav-btn:hover { background: #f4f4f4; }
+{%- endstyle -%}
+
+<div class="carousel-container-{{ section.id }}">
+  <button class="carousel-nav-btn btn-prev-{{ section.id }}" aria-label="Anterior">❮</button>
+  
+  <div class="carousel-track-{{ section.id }}" id="Track-{{ section.id }}">
+    {%- for block in section.blocks -%}
+      <a href="{{ block.settings.collection.url }}" class="carousel-item-{{ section.id }}" {{ block.shopify_attributes }}>
+        {% if block.settings.collection.featured_image %}
+          {{ block.settings.collection.featured_image | image_url: width: 1000 | image_tag: loading: 'lazy' }}
+        {% else %}
+          {{ 'collection-1' | placeholder_svg_tag }}
+        {% endif %}
+        <p style="text-align: center; margin-top: 10px; font-weight: 500;">{{ block.settings.collection.title }} →</p>
+      </a>
+    {%- endfor -%}
+  </div>
+
+  <button class="carousel-nav-btn btn-next-{{ section.id }}" aria-label="Siguiente">❯</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.getElementById('Track-{{ section.id }}');
+  const btnPrev = document.querySelector('.btn-prev-{{ section.id }}');
+  const btnNext = document.querySelector('.btn-next-{{ section.id }}');
+  let isTransitioning = false;
+
+  function moveNext() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+    
+    const itemWidth = track.firstElementChild.getBoundingClientRect().width + {{ section.settings.gap }};
+    
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(-${itemWidth}px)`;
+
+    track.addEventListener('transitionend', function() {
+      track.style.transition = 'none';
+      track.appendChild(track.firstElementChild);
+      track.style.transform = 'translateX(0)';
+      isTransitioning = false;
+    }, { once: true });
+  }
+
+  function movePrev() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    const itemWidth = track.firstElementChild.getBoundingClientRect().width + {{ section.settings.gap }};
+    
+    track.style.transition = 'none';
+    track.insertBefore(track.lastElementChild, track.firstElementChild);
+    track.style.transform = `translateX(-${itemWidth}px)`;
+    
+    setTimeout(() => {
+      track.style.transition = 'transform 0.5s ease-in-out';
+      track.style.transform = 'translateX(0)';
+      track.addEventListener('transitionend', () => { isTransitioning = false; }, { once: true });
+    }, 10);
+  }
+
+  btnNext.addEventListener('click', moveNext);
+  btnPrev.addEventListener('click', movePrev);
+
+  {% if section.settings.autoplay %}
+    let autoplayInterval = setInterval(moveNext, {{ section.settings.autoplay_speed | times: 1000 }});
+    track.parentElement.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+    track.parentElement.addEventListener('mouseleave', () => {
+      autoplayInterval = setInterval(moveNext, {{ section.settings.autoplay_speed | times: 1000 }});
+    });
+  {% endif %}
+});
+</script>
+
+{% schema %}
+{
+  "name": "Carrusel Pro Colecciones",
+  "settings": [
+    { "type": "checkbox", "id": "autoplay", "label": "Autocambiante", "default": true },
+    { "type": "range", "id": "autoplay_speed", "min": 2, "max": 10, "step": 1, "unit": "seg", "label": "Velocidad", "default": 5 },
+    { "type": "range", "id": "cols_desktop", "min": 1, "max": 6, "step": 1, "label": "Columnas Desktop", "default": 4 },
+    { "type": "range", "id": "cols_tablet", "min": 1, "max": 4, "step": 1, "label": "Columnas Tablet", "default": 3 },
+    { "type": "range", "id": "cols_mobile", "min": 1, "max": 3, "step": 1, "label": "Columnas Móvil", "default": 1 },
+    { "type": "range", "id": "gap", "min": 0, "max": 40, "step": 5, "unit": "px", "label": "Espacio entre fotos", "default": 15 },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding Arriba", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding Abajo", "default": 36 }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Colección",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Selecciona Colección" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Carrusel Pro Colecciones" }]
+}
+{% endschema %}

@@ -1,0 +1,133 @@
+<section class="benefits-bar">
+  <div class="benefits-wrapper page-width">
+
+    {% for block in section.blocks %}
+      <div class="benefit-item">
+
+        {% if block.settings.icon != blank %}
+          <img
+          src="{{ block.settings.icon | image_url: width: 60 }}"
+          width="60"
+          height="60"
+          alt="{{ block.settings.title | escape }}"
+          loading="lazy"
+        >
+        {% endif %}
+
+        <div class="benefit-text">
+          <h4>{{ block.settings.title }}</h4>
+          <p>{{ block.settings.text }}</p>
+        </div>
+
+      </div>
+
+      {% unless forloop.last %}
+        <div class="benefit-divider"></div>
+      {% endunless %}
+
+    {% endfor %}
+
+  </div>
+</section>
+
+<style>
+.benefits-bar {
+  background: #ffffff;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.benefits-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+.benefit-item img {
+  width: 38px;
+  height: auto;
+}
+
+.benefit-text h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.benefit-text p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.benefit-divider {
+  width: 1px;
+  height: 40px;
+  background: #ddd;
+  margin: 0 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .benefits-wrapper {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .benefit-divider {
+    display: none;
+  }
+
+  .benefit-item {
+    justify-content: center;
+    text-align: center;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Barra de beneficios",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Beneficio",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Ícono"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título",
+          "default": "Compra con tranquilidad"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Descripción",
+          "default": "Tarjeta, contraentrega y opciones de pago disponibles."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barra de beneficios",
+      "category": "Contenido"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,360 @@
+{% assign has_physical = false %}
+{% assign has_falabella = false %}
+{% for block in section.blocks %}
+  {% if block.settings.kind == 'physical' %}
+    {% assign has_physical = true %}
+  {% endif %}
+  {% if block.settings.kind == 'falabella' %}
+    {% assign has_falabella = true %}
+  {% endif %}
+{% endfor %}
+
+<section class="tiendas-santorini" data-section-id="{{ section.id }}">
+  <div class="tiendas-santorini__wrap">
+    <header class="tiendas-santorini__header">
+      {% if section.settings.heading != blank %}
+        <h1 class="tiendas-santorini__title">{{ section.settings.heading }}</h1>
+      {% endif %}
+      {% if section.settings.subheading != blank %}
+        <p class="tiendas-santorini__subtitle">{{ section.settings.subheading }}</p>
+      {% endif %}
+    </header>
+
+    {% if has_physical %}
+      <div class="tiendas-santorini__group">
+        <h2 class="tiendas-santorini__group-title">{{ section.settings.physical_title }}</h2>
+        <div class="tiendas-santorini__list">
+          {% for block in section.blocks %}
+            {% if block.settings.kind == 'physical' %}
+              <article class="tiendas-santorini__card" {{ block.shopify_attributes }}>
+                <div class="tiendas-santorini__media">
+                  {% if block.settings.image != blank %}
+                    {{ block.settings.image | image_url: width: 900 | image_tag: class: "tiendas-santorini__img", loading: "lazy" }}
+                  {% else %}
+                    <div class="tiendas-santorini__img-placeholder"></div>
+                  {% endif %}
+                </div>
+                <div class="tiendas-santorini__content">
+                  <div class="tiendas-santorini__chip">Tienda Física</div>
+                  <h3 class="tiendas-santorini__name">{{ block.settings.title }}</h3>
+                  <ul class="tiendas-santorini__details">
+                    {% if block.settings.address != blank %}
+                      <li><strong>Dirección:</strong> {{ block.settings.address }}</li>
+                    {% endif %}
+                    {% if block.settings.local != blank %}
+                      <li><strong>Local:</strong> {{ block.settings.local }}</li>
+                    {% endif %}
+                    {% if block.settings.phone != blank %}
+                      <li><strong>Teléfono:</strong> {{ block.settings.phone }}</li>
+                    {% endif %}
+                    {% if block.settings.email != blank %}
+                      <li><strong>Correo:</strong> {{ block.settings.email }}</li>
+                    {% endif %}
+                  </ul>
+                  {% if block.settings.map_url != blank %}
+                    <a class="tiendas-santorini__map-btn" href="{{ block.settings.map_url }}" target="_blank" rel="noopener">
+                      Ver mapa
+                    </a>
+                  {% endif %}
+                </div>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if has_falabella %}
+      <div class="tiendas-santorini__group">
+        <h2 class="tiendas-santorini__group-title">{{ section.settings.falabella_title }}</h2>
+        <div class="tiendas-santorini__list">
+          {% for block in section.blocks %}
+            {% if block.settings.kind == 'falabella' %}
+              <article class="tiendas-santorini__card" {{ block.shopify_attributes }}>
+                <div class="tiendas-santorini__media">
+                  {% if block.settings.image != blank %}
+                    {{ block.settings.image | image_url: width: 900 | image_tag: class: "tiendas-santorini__img", loading: "lazy" }}
+                  {% else %}
+                    <div class="tiendas-santorini__img-placeholder"></div>
+                  {% endif %}
+                </div>
+                <div class="tiendas-santorini__content">
+                  <div class="tiendas-santorini__chip">Punto Falabella</div>
+                  <h3 class="tiendas-santorini__name">{{ block.settings.title }}</h3>
+                  <ul class="tiendas-santorini__details">
+                    {% if block.settings.address != blank %}
+                      <li><strong>Dirección:</strong> {{ block.settings.address }}</li>
+                    {% endif %}
+                    {% if block.settings.local != blank %}
+                      <li><strong>Local:</strong> {{ block.settings.local }}</li>
+                    {% endif %}
+                    {% if block.settings.phone != blank %}
+                      <li><strong>Teléfono:</strong> {{ block.settings.phone }}</li>
+                    {% endif %}
+                    {% if block.settings.email != blank %}
+                      <li><strong>Correo:</strong> {{ block.settings.email }}</li>
+                    {% endif %}
+                  </ul>
+                  {% if block.settings.map_url != blank %}
+                    <a class="tiendas-santorini__map-btn" href="{{ block.settings.map_url }}" target="_blank" rel="noopener">
+                      Ver mapa
+                    </a>
+                  {% endif %}
+                </div>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@300;400;600&display=swap");
+
+  .tiendas-santorini {
+    --bg-1: #f7f2ee;
+    --bg-2: #efe6df;
+    --ink: #2b1f18;
+    --muted: #6e5b50;
+    --accent: #b08a5f;
+    --accent-dark: #8f6a43;
+
+    background: radial-gradient(1200px 400px at 10% 0%, var(--bg-1), var(--bg-2));
+    padding: 64px 20px;
+  }
+
+  .tiendas-santorini__wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tiendas-santorini__header {
+    margin-bottom: 36px;
+  }
+
+  .tiendas-santorini__title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(32px, 4vw, 52px);
+    color: var(--ink);
+    margin: 0 0 10px 0;
+    letter-spacing: 0.5px;
+  }
+
+  .tiendas-santorini__subtitle {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--muted);
+    margin: 0;
+    max-width: 700px;
+  }
+
+  .tiendas-santorini__group {
+    margin-top: 32px;
+  }
+
+  .tiendas-santorini__group-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    color: var(--ink);
+    margin: 0 0 16px 0;
+  }
+
+  .tiendas-santorini__list {
+    display: grid;
+    gap: 22px;
+  }
+
+  .tiendas-santorini__card {
+    background: #fff;
+    border: 1px solid #eadfd7;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(40, 25, 15, 0.08);
+  }
+
+  .tiendas-santorini__media {
+    min-height: 220px;
+    background: #f0e6df;
+  }
+
+  .tiendas-santorini__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .tiendas-santorini__img-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #efe1d7, #f6eee8);
+  }
+
+  .tiendas-santorini__content {
+    padding: 24px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .tiendas-santorini__chip {
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #fff;
+    background: var(--accent);
+    padding: 6px 10px;
+    border-radius: 999px;
+    width: fit-content;
+  }
+
+  .tiendas-santorini__name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .tiendas-santorini__details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    display: grid;
+    gap: 6px;
+  }
+
+  .tiendas-santorini__details strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .tiendas-santorini__map-btn {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background: var(--accent-dark);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 999px;
+    width: fit-content;
+    transition: transform 180ms ease, background 180ms ease;
+  }
+
+  .tiendas-santorini__map-btn:hover {
+    transform: translateY(-1px);
+    background: #755234;
+  }
+
+  @media (max-width: 840px) {
+    .tiendas-santorini__card {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Tiendas Santorini",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título principal",
+      "default": "Nuestras tiendas"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subtítulo",
+      "default": "Encuentra tu tienda Santorini Shoes más cercana."
+    },
+    {
+      "type": "text",
+      "id": "physical_title",
+      "label": "Título tiendas físicas",
+      "default": "Tiendas físicas"
+    },
+    {
+      "type": "text",
+      "id": "falabella_title",
+      "label": "Título puntos Falabella",
+      "default": "Puntos Falabella"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "store",
+      "name": "Tienda / Punto",
+      "settings": [
+        {
+          "type": "select",
+          "id": "kind",
+          "label": "Tipo",
+          "default": "physical",
+          "options": [
+            { "value": "physical", "label": "Tienda física" },
+            { "value": "falabella", "label": "Punto Falabella" }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto de la tienda"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Nombre / Centro comercial",
+          "default": "Santorini Shoes - CC Ejemplo"
+        },
+        {
+          "type": "text",
+          "id": "address",
+          "label": "Dirección",
+          "default": "Calle 00 #00-00"
+        },
+        {
+          "type": "text",
+          "id": "local",
+          "label": "Local",
+          "default": "Local 101"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Teléfono",
+          "default": "+57 300 000 0000"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Correo",
+          "default": "contacto@santorinishoes.com"
+        },
+        {
+          "type": "url",
+          "id": "map_url",
+          "label": "Link Google Maps"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tiendas Santorini",
+      "blocks": [
+        {
+          "type": "store"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

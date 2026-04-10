@@ -1,0 +1,231 @@
+{% comment %}
+  Footer Santorini (custom) - Replica exacta del diseño solicitado
+{% endcomment %}
+
+<section class="st-footer" style="--st-bg: {{ section.settings.bg_color }}; --st-text: {{ section.settings.text_color }}; --st-muted: {{ section.settings.muted_color }};">
+  <div class="st-footer__wrap">
+  
+  <div class="st-footer__socials"> 
+
+  <div class="st-footer__socials">
+  <div class="st-footer__socials-title">{{ section.settings.socials_title }}</div>
+
+  <div class="st-footer__socials-icons">
+
+    {% if section.settings.facebook_url != blank %}
+      <a href="{{ section.settings.facebook_url }}" aria-label="Facebook" target="_blank" rel="noopener">
+        <img src="{{ 'facebook.svg' | asset_url }}" alt="Facebook" width="20" height="20" class="st-icon-img">
+      </a>
+    {% endif %}
+
+    {% if section.settings.instagram_url != blank %}
+      <a href="{{ section.settings.instagram_url }}" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="{{ 'instagram.svg' | asset_url }}" alt="Instagram" class="st-icon-img" width="20" height="20" class="st-icon-img">
+      </a>
+    {% endif %}
+
+    {% if section.settings.whatsapp_url != blank %}
+      <a href="{{ section.settings.whatsapp_url }}" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="{{ 'whatsapp.svg' | asset_url }}" alt="WhatsApp" class="st-icon-img" width="20" height="20" class="st-icon-img">
+      </a>
+    {% endif %}
+
+    {% if section.settings.tiktok_url != blank %}
+      <a href="{{ section.settings.tiktok_url }}" aria-label="TikTok" target="_blank" rel="noopener">
+        <img src="{{ 'tiktok.svg' | asset_url }}" alt="TikTok" class="st-icon-img" width="20" height="20" class="st-icon-img">
+      </a>
+    {% endif %}
+
+  </div>
+</div>
+
+
+</div>
+
+    <div class="st-footer__grid">
+      <div class="st-footer__col">
+        <h4 class="st-footer__title">{{ section.settings.col1_title }}</h4>
+        <div class="st-footer__rich">
+          {{ section.settings.col1_text }}
+        </div>
+      </div>
+
+      <div class="st-footer__col">
+        <h4 class="st-footer__title">{{ section.settings.col2_title }}</h4>
+        {% if section.settings.col2_menu != blank %}
+          <ul class="st-footer__list">
+            {% for link in section.settings.col2_menu.links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="st-footer__col">
+        <h4 class="st-footer__title">{{ section.settings.col3_title }}</h4>
+        {% if section.settings.col3_menu != blank %}
+          <ul class="st-footer__list">
+            {% for link in section.settings.col3_menu.links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      {% comment %} <div class="st-footer__col st-footer__col--logo">
+        <h4 class="st-footer__title">{{ section.settings.col4_title }}</h4>
+        {% if section.settings.col4_image != blank %}
+          <div class="st-footer__logo">
+            {{ section.settings.col4_image | image_url: width: 400 | image_tag: loading: 'lazy', class: 'st-footer__logo-img', alt: section.settings.col4_image_alt }}
+          </div>
+        {% endif %}
+      </div> {% endcomment %}
+      <div class="st-footer__col st-footer__col--logo">
+  <h4 class="st-footer__title">{{ section.settings.col4_title }}</h4>
+
+  {% if section.settings.col4_image != blank %}
+    <div class="st-footer__logo">
+      
+      <a href="{{ section.settings.col4_link }}" target="_blank">
+        {{ section.settings.col4_image 
+          | image_url: width: 400 
+          | image_tag: 
+            loading: 'lazy', 
+            class: 'st-footer__logo-img', 
+            alt: section.settings.col4_image_alt 
+        }}
+      </a>
+
+    </div>
+  {% endif %}
+</div>
+
+      <div class="st-footer__col st-footer__col--newsletter">
+        <h4 class="st-footer__title">{{ section.settings.col5_title }}</h4>
+        {% if section.settings.col5_text != blank %}
+          <p class="st-footer__text">{{ section.settings.col5_text }}</p>
+        {% endif %}
+
+        {% form 'customer', id: 'FooterNewsletter' %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input class="st-footer__input" type="email" name="contact[email]" placeholder="{{ section.settings.col5_placeholder }}" aria-label="{{ section.settings.col5_placeholder }}" required>
+          <button class="st-footer__button" type="submit">{{ section.settings.col5_button }}</button>
+        {% endform %}
+      </div>
+    </div>
+
+    {% if section.settings.copyright_text != blank %}
+      <div class="st-footer__bottom">
+        <p>{{ section.settings.copyright_text }}</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+.st-icon-img {
+  filter: brightness(0) invert(1);
+}
+
+  .st-footer {
+    background: var(--st-bg);
+    color: var(--st-text);
+    padding: 44px 20px 24px;
+    font-family: "Montserrat", "Poppins", sans-serif;
+  }
+  .st-footer__wrap { max-width: 1300px; margin: 0 auto; }
+  .st-footer__socials { text-align: center; margin-bottom: 26px; }
+  .st-footer__socials-title {
+    font-size: 26px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+  }
+  .st-footer__socials-icons { display: flex; justify-content: center; gap: 16px; margin-top: 10px; }
+  .st-icon svg { width: 22px; height: 22px; fill: var(--st-muted); transition: .2s ease; }
+  .st-footer__socials-icons a:hover .st-icon svg { fill: var(--st-text); transform: translateY(-2px); }
+
+  .st-footer__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1.6fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .st-footer__title {
+    font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 14px; position: relative; color:#ffffff;
+  }
+  .st-footer__title::after {
+    content: ""; display: block; width: 28px; height: 2px; background: var(--st-text); margin-top: 8px;color:#ffffff;
+  }
+
+  .st-footer__rich { color: var(--st-muted); font-size: 14px; line-height: 1.7; }
+  .st-footer__list { list-style: none; margin: 0; padding: 0; }
+  .st-footer__list li { margin-bottom: 9px; }
+  .st-footer__list a { color: var(--st-muted); text-decoration: none; font-size: 14px; }
+  .st-footer__list a:hover { color: var(--st-text); }
+
+  .st-footer__logo-img { max-width: 100%; height: auto; }
+  .st-footer__text { color: var(--st-muted); font-size: 14px; margin-bottom: 12px; }
+
+  .st-footer__input {
+    width: 100%; padding: 12px 14px; border: 1px solid #2b2b2b;
+    background: transparent; color: var(--st-text); font-size: 14px; margin-bottom: 10px;
+  }
+  .st-footer__button {
+    width: 100%; padding: 12px 14px; background: #3b3f46; color: #fff;
+    border: none; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; cursor: pointer;
+  }
+  .st-footer__button:hover { background: #4a4f57; }
+
+  .st-footer__bottom {
+    border-top: 1px solid #1a1a1a; margin-top: 30px; padding-top: 14px;
+    text-align: center; color: var(--st-muted); font-size: 13px;
+  }
+
+  @media (max-width: 1100px) {
+    .st-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) {
+    .st-footer__grid { grid-template-columns: 1fr; }
+    .st-footer__socials-title { font-size: 20px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Footer Santorini",
+  "settings": [
+    { "type": "text", "id": "socials_title", "label": "Título redes", "default": "SÍGUENOS EN" },
+    { "type": "url", "id": "facebook_url", "label": "Facebook URL" },
+    { "type": "url", "id": "instagram_url", "label": "Instagram URL" },
+    { "type": "url", "id": "whatsapp_url", "label": "WhatsApp URL" },
+    { "type": "url", "id": "tiktok_url", "label": "TikTok URL" },
+
+    { "type": "text", "id": "col1_title", "label": "Título columna 1", "default": "CONTACTANOS" },
+    { "type": "richtext", "id": "col1_text", "label": "Texto columna 1", "default": "<p><strong>TIENDA ONLINE</strong><br>WhatsApp: +57 310 488 8452<br>e-mail: eshop@santorini.com.co</p><p><strong>CONTACTO SERVICIO AL CLIENTE</strong><br>WhatsApp: +57 322 857 4393<br>e-mail: servicioalcliente@santorini.com.co</p><p><strong>NOTIFICACIONES JUDICIALES</strong><br>Razón social: FENISE SAS<br>NIT 901.169.825-4<br>Dirección: Carrera70 C # 79 - 51<br>e-mail: juridica@santorini.com.co</p>" },
+    
+    { "type": "text", "id": "col2_title", "label": "Título columna 2", "default": "POLÍTICAS" },
+    { "type": "link_list", "id": "col2_menu", "label": "Menú columna 2" },
+
+    { "type": "text", "id": "col3_title", "label": "Título columna 3", "default": "AYUDA" },
+    { "type": "link_list", "id": "col3_menu", "label": "Menú columna 3" },
+
+    { "type": "text", "id": "col4_title", "label": "Título columna 4", "default": "SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO" },
+    { "type": "image_picker", "id": "col4_image", "label": "Imagen columna 4" },
+    { "type": "text", "id": "col4_image_alt", "label": "Alt imagen columna 4", "default": "Superintendencia" },
+    { "type": "url", "id": "col4_link", "label": "Link imagen columna 4" },
+
+    { "type": "text", "id": "col5_title", "label": "Título columna 5", "default": "¡REGÍSTRATE A NUESTRO NEWSLETTER!" },
+    { "type": "textarea", "id": "col5_text", "label": "Texto columna 5", "default": "Entérate de lo último en tendencia, promociones y noticias exclusivas que tenemos para ti." },
+    { "type": "text", "id": "col5_placeholder", "label": "Placeholder newsletter", "default": "Escribe tu correo" },
+    { "type": "text", "id": "col5_button", "label": "Botón newsletter", "default": "SUSCRIBIRME" },
+
+    { "type": "color", "id": "bg_color", "label": "Color fondo", "default": "#000000" },
+    { "type": "color", "id": "text_color", "label": "Color texto", "default": "#ffffff" },
+    { "type": "color", "id": "muted_color", "label": "Color texto secundario", "default": "#9aa0a6" },
+    { "type": "text", "id": "copyright_text", "label": "Copyright", "default": "© 2026 SANTORINI. Todos los derechos reservados" }
+  ],
+  "presets": [
+    { "name": "Footer Santorini" }
+  ]
+}
+{% endschema %}
