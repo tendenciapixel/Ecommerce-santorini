@@ -680,9 +680,40 @@
     }
   ],
   "blocks": [
-    {
-      "type": "@app"
-    }
-  ]
+  {
+    "type": "@app"
+  },
+  {
+    "type": "menu_cta",
+    "name": "Botón menú (CTA)",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Texto del botón",
+        "default": "Renueva tu estilo 10 off"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "Enlace del botón"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Color de fondo",
+        "default": "#e60023"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Color de texto",
+        "default": "#ffffff"
+      }
+    ]
+  }
+]
+
 }
 {% endschema %}
