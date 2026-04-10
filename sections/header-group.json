@@ -57,7 +57,7 @@
         "menu_cta_ACp4Fb": {
           "type": "menu_cta",
           "settings": {
-            "text": "Renueva tu estilo 10 off",
+            "text": "Renueva tu estilo -10% dto",
             "url": "shopify://collections/renuevate",
             "bg_color": "#e60023",
             "text_color": "#ffffff"
