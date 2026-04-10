@@ -74,6 +74,36 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
+/*Boton de promocion header*/
+
+
+.menu-cta-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu-cta-button {
+  background: #e60023;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.menu-cta-button:hover {
+  background: #c2001d;
+}
+
+
+
+
 /*eqtiqueta de nuevo */
 .badge--nuevo {
   position: absolute;
