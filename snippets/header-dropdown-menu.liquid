@@ -96,14 +96,14 @@
               {{- link.title | escape -}}
             </span>
           </a>
-          {% comment %} Se agrega el boton de descuento    {% endcomment %}
-            {%- if link.title | downcase == 'outlet' -%}
-    <a href="/collections/COLECCION-OBJETIVO" class="menu-cta-button">
-      Renueva tu estilo 10 off
-    </a>
-  {%- endif -%}
         {%- endif -%}
       </li>
+
+      {%- if forloop.last -%}
+        <li class="menu-cta-item">
+          <a href="/collections/COLECCION-OBJETIVO" class="menu-cta-button"> Renueva tu estilo 10 off </a>
+        </li>
+      {%- endif -%}
     {%- endfor -%}
   </ul>
 </nav>
