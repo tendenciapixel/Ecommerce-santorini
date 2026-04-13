@@ -337,6 +337,7 @@
     },
     "featured_collection_kpFarR": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title_alignment": "center",
@@ -372,7 +373,7 @@
         "title_alignment": "center",
         "collection": "bestseller",
         "products_to_show": 7,
-        "title": "<strong>Renueva tu estilo con 10% OFF</strong>",
+        "title": "<strong>Best Seller</strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
