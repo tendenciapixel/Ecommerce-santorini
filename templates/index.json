@@ -365,6 +365,36 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection_FRDUHW": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title_alignment": "center",
+        "collection": "bestseller",
+        "products_to_show": 7,
+        "title": "<strong>Renueva tu estilo con 10% OFF</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-2",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "banner_doble_QnaVjz": {
       "type": "banner-doble",
       "blocks": {
@@ -633,6 +663,7 @@
     "benefits_bar_7xqeqr",
     "custom_collection_carousel_kJ6WCC",
     "featured_collection_kpFarR",
+    "featured_collection_FRDUHW",
     "banner_doble_QnaVjz",
     "featured_collection_gAMz4E",
     "image_banner_A8HfE7",
