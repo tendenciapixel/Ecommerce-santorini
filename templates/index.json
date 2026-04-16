@@ -71,8 +71,6 @@
         "slide_jYCRNU": {
           "type": "slide",
           "settings": {
-            "image_pc": "shopify://shop_images/10dto_-_BANNER_PC_jpg.jpg",
-            "image_mobile": "shopify://shop_images/10dto_-_BANNER_MOBIL_jpg.jpg",
             "link": "shopify://collections/renuevate",
             "title": "",
             "subtitle": "",
@@ -95,6 +93,7 @@
     },
     "video_san_8cin7R": {
       "type": "video-san",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
@@ -103,6 +102,24 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify://files/videos/Banner Santorini (1).mp4",
+        "video_url": "",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "video_san_aVbYyj": {
+      "type": "video-san",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "video_link": "shopify://collections/correas",
+        "video_mobile": "shopify://files/videos/ACCESORIOS SANTORINI-mobil.mp4",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/ACCESORIOS SANTORINI(1) (1).mp4",
         "video_url": "",
         "description": "",
         "full_width": true,
@@ -658,6 +675,7 @@
     "banner_responsive_ttEqg9",
     "banner_responsive_Kchgrp",
     "video_san_8cin7R",
+    "video_san_aVbYyj",
     "video_BzgPb6",
     "banner_responsive_yz9PXi",
     "image_banner",
