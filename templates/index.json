@@ -390,7 +390,7 @@
         "title_alignment": "center",
         "collection": "producto-de-coleccion",
         "products_to_show": 7,
-        "title": "<strong>Productos de coleccion</strong>",
+        "title": "<strong>Productos de colección</strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
