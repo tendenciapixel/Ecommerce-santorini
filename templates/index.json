@@ -388,9 +388,9 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title_alignment": "center",
-        "collection": "bestseller",
+        "collection": "producto-de-coleccion",
         "products_to_show": 7,
-        "title": "<strong>Best Seller</strong>",
+        "title": "<strong>Productos de coleccion</strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
