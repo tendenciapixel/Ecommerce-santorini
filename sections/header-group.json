@@ -57,8 +57,8 @@
         "menu_cta_ACp4Fb": {
           "type": "menu_cta",
           "settings": {
-            "text": "Productos de colección",
-            "url": "shopify://collections/producto-de-coleccion",
+            "text": "Para estas lluvias -10% dto",
+            "url": "shopify://collections/back-to-city",
             "bg_color": "#e60023",
             "text_color": "#ffffff"
           }
