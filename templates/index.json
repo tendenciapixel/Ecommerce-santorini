@@ -14,36 +14,11 @@
       "blocks": {
         "slide_jq3tbB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image_pc": "shopify://shop_images/banner_comodidad_SANTORINI_-_23_jpg.jpg",
-            "image_mobile": "shopify://shop_images/banner_comodidad_SANTORINI_-_2mobil3_jpg.jpg",
+            "image_pc": "shopify://shop_images/Lluvias-10_-off.jpg_1.jpg",
+            "image_mobile": "shopify://shop_images/back_to_city_Banner_mobil_jpg.jpg",
             "link": "shopify://collections/baletas-mujer",
-            "title": "",
-            "subtitle": "",
-            "button_text": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "slide_HcjmD9": {
-          "type": "slide",
-          "settings": {
-            "image_pc": "shopify://shop_images/banner_comodidad_SANTORINI_-_22_jpg.jpg",
-            "image_mobile": "shopify://shop_images/banner_comodidad_SANTORINI_-_2mobil2_jpg.jpg",
-            "link": "shopify://collections/tenis-mujer",
-            "title": "",
-            "subtitle": "",
-            "button_text": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "slide_CtaidF": {
-          "type": "slide",
-          "settings": {
-            "image_pc": "shopify://shop_images/banner_comodidad_SANTORINI_-_21_jpg.jpg",
-            "image_mobile": "shopify://shop_images/banner_comodidad_SANTORINI_-_2mobil1_jpg.jpg",
-            "link": "shopify://collections/sandalias-mujer",
             "title": "",
             "subtitle": "",
             "button_text": "",
@@ -53,11 +28,8 @@
         }
       },
       "block_order": [
-        "slide_jq3tbB",
-        "slide_HcjmD9",
-        "slide_CtaidF"
+        "slide_jq3tbB"
       ],
-      "disabled": true,
       "name": "Banner principal carrusel",
       "settings": {
         "autoplay": true,
@@ -388,9 +360,9 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title_alignment": "center",
-        "collection": "producto-de-coleccion",
+        "collection": "back-to-city",
         "products_to_show": 7,
-        "title": "<strong>Productos de colección</strong>",
+        "title": "<strong>IDEALES PARA TEMPORADA DE LLUVIA</strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
