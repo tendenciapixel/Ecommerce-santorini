@@ -1,1 +1,643 @@
-{"current":{"logo":"shopify:\/\/shop_images\/3a1f3d02a41c1fb11b46d6060449761ca37f9748.png","logo_width":150,"favicon":"shopify:\/\/shop_images\/Diseno_sin_titulo_17.png","type_header_font":"assistant_n4","heading_scale":100,"type_body_font":"assistant_n4","body_scale":100,"page_width":1600,"spacing_sections":0,"spacing_grid_horizontal":8,"spacing_grid_vertical":8,"animations_reveal_on_scroll":true,"animations_hover_elements":"none","buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":0,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":4,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":-8,"inputs_shadow_blur":5,"card_style":"card","card_image_padding":0,"card_text_alignment":"left","card_color_scheme":"scheme-1","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"scheme-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"scheme-2","blog_card_border_thickness":0,"blog_card_border_opacity":10,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":5,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"bottom right","badge_corner_radius":40,"sale_badge_color_scheme":"scheme-4","sold_out_badge_color_scheme":"scheme-3","brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_facebook_link":"","social_instagram_link":"","social_youtube_link":"","social_tiktok_link":"","social_twitter_link":"","social_snapchat_link":"","social_pinterest_link":"","social_tumblr_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":false,"currency_code_enabled":true,"cart_type":"notification","show_vendor":false,"show_cart_note":false,"cart_drawer_collection":"","cart_color_scheme":"scheme-1","media_grouping_option":"Colour","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"scheme-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"scheme-1"}},"tiendas-santorini":{"type":"tiendas-santorini","blocks":{"store_VUdmAD":{"type":"store","settings":{"kind":"physical","image":"shopify:\/\/shop_images\/Hacienda_Santa_Barbara_-_SANTORINI.jpg_1.jpg","title":"SANTORINI HACIENDA","address":"Carrera 7 # 115 – 60","local":"D-104","phone":"+57 3228574393","email":"local.h.moda@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/VjXE2kNfFqXzkaN57"}},"store_tUc83z":{"type":"store","settings":{"kind":"physical","image":"shopify:\/\/shop_images\/plaza_de_las_americas_-_SANTORINI_jpg.jpg","title":"SANTORINI PLAZA AMERICAS","address":"Carrera 71d #6 – 94 sur","local":"1230","phone":"+57 3228574393","email":"local.americas@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/kUeCo3mWfeE1MSN1A"}},"store_6YyYPE":{"type":"store","settings":{"kind":"physical","image":"shopify:\/\/shop_images\/Galeria_-_SANTORINI_jpg.jpg","title":"SANTORINI GALERIAS","address":"Calle 53B No. 25 – 21","local":"1-103 Entrada 8","phone":"+57 3228574393","email":"local.outlet@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/Xpdw8tAxvDfvFMeg7"}},"store_iDBDja":{"type":"store","settings":{"kind":"physical","image":"shopify:\/\/shop_images\/plaza_central_-_SANTORINI_jpg.jpg","title":"SANTORINI PLAZA CENTRAL","address":"Carrera 65 # 11 – 30","local":"Local 101","phone":"+57 3228574393","email":"local.plazacentral@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/ThY7oXKeGZXk7CbSA"}},"store_QLxCFz":{"type":"store","settings":{"kind":"physical","image":"shopify:\/\/shop_images\/unicentro_-_SANTORINI_jpg.jpg","title":"SANTORINI UNICENTRO","address":"Av 15 # 124 – 30","local":"2-249","phone":"+57 3228574393","email":"local.u.diferente@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/Rd6PCPmQYBiyxLD87"}},"store_fgarhd":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_fontanar.jpg_1.jpg","title":"FALABELLA FONTANAR","address":"Cajicá - Chía #Km 2.5, Chía, Cundinamarca","local":"","phone":"","email":"falabella_fontanar@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/jnAqz65Ka6hSqW1G7"}},"store_t9gbKB":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_santafe_jpg.jpg","title":"FALABELLA SANTAFE","address":"Cl. 185 #45-3, Bogotá","local":"","phone":"","email":"falabella_santafe@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/UzwRHtSPWTEp5LLj6"}},"store_dPjgp6":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Parque_la_Colina_jpg.jpg","title":"FALABELLA COLINA","address":"Cra. 58d #146-51, Bogotá","local":"","phone":"","email":"falabella_colina@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/XyJyZhDQy9LixU6V8"}},"store_iFLywY":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Centro_Mayor_jpg.jpg","title":"FALABELLA CENTRO MAYOR","address":"Cl. 38A Sur #34d-51, Bogotá","local":"","phone":"","email":"falabella_centromayor@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/hKuT8x9bU9yBFfif8"}},"store_48a9gb":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Titan_jpg.jpg","title":"FALABELLA TITAN","address":"Cra. 72 #80-94, Bogotá","local":"","phone":"","email":"falabella_titan@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/EUzVqcM2afgutwdu5"}},"store_34qG3y":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Plaza_Imperial_jpg.jpg","title":"FALABELLA PLAZA IMPERIAL","address":"con, Cra. 104 #148 - 07 Av. Ciudad de Cali, Ac 145, Cundinamarca","local":"","phone":"","email":"falabella_sandiego@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/A4YB2FzpT8nJJV5t7"}},"store_HkVLbL":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Galerias_jpg.jpg","title":"FALABELLA GALERIAS","address":"Cl. 53b #25 - 21, Bogotá","local":"","phone":"","email":"falabella_galerias@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/4YP9vnsg6ZzoVKkF6"}},"store_8teJKb":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Plaza_Central_jpg.jpg","title":"FALABELLA PLAZA CENTRAL","address":"Calle 13 con Carrera 62, Bogotá","local":"","phone":"","email":"falabella_plazacentral@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/Yjy18Upcd3d4yLb78"}},"store_KiTkpY":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Multiplaza_jpg.jpg","title":"FALABELLA MULTIPLAZA","address":"Cra. 72 #17a-63, Bogotá","local":"","phone":"","email":"falabella_multiplaza@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/4VaZkrwKS59cNLWq6"}},"store_bHpPet":{"type":"store","settings":{"kind":"falabella","image":"shopify:\/\/shop_images\/falabella_-_santorini_Hayuelos_jpg.jpg","title":"FALABELLA HAYUELOS","address":"Cl 20 #82 - 52, Fontibón, Bogotá, Cundinamarca","local":"","phone":"","email":"falabella_hayuelos@santorini.com.co","map_url":"https:\/\/maps.app.goo.gl\/JPnGTm5xDAvago1g6"}}},"block_order":["store_VUdmAD","store_tUc83z","store_6YyYPE","store_iDBDja","store_QLxCFz","store_fgarhd","store_t9gbKB","store_dPjgp6","store_iFLywY","store_48a9gb","store_34qG3y","store_HkVLbL","store_8teJKb","store_KiTkpY","store_bHpPet"],"settings":{"heading":"Nuestras tiendas","subheading":"Encuentra tu tienda SANTORINI más cercana.","physical_title":"Tiendas SANTORINI","falabella_title":"Puntos Falabella"}}},"content_for_index":[],"blocks":{"13768625480086291342":{"type":"shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a","disabled":false,"settings":{}},"6159598353363395418":{"type":"shopify:\/\/apps\/google-youtube\/blocks\/store_widget\/14ec7bd0-ac77-49a9-9417-90752398bdff","disabled":false,"settings":{"widget_position":"LEFT_BOTTOM","side_margin":36,"bottom_margin":36,"mobile_side_margin":16,"mobile_bottom_margin":46}}},"color_schemes":{"scheme-1":{"settings":{"background":"#ffffff","background_gradient":"","text":"#121212","button":"#121212","button_label":"#ffffff","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-2":{"settings":{"background":"#f3f3f3","background_gradient":"","text":"#121212","button":"#121212","button_label":"#f3f3f3","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-3":{"settings":{"background":"#242833","background_gradient":"","text":"#ffffff","button":"#ffffff","button_label":"#000000","secondary_button_label":"#ffffff","shadow":"#121212"}},"scheme-4":{"settings":{"background":"#121212","background_gradient":"","text":"#ffffff","button":"#ffffff","button_label":"#121212","secondary_button_label":"#ffffff","shadow":"#121212"}},"scheme-5":{"settings":{"background":"#334fb4","background_gradient":"","text":"#ffffff","button":"#ffffff","button_label":"#334fb4","secondary_button_label":"#ffffff","shadow":"#121212"}}}},"presets":{"Dawn":{"logo_width":90,"color_schemes":{"scheme-1":{"settings":{"background":"#FFFFFF","background_gradient":"","text":"#121212","button":"#121212","button_label":"#FFFFFF","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-2":{"settings":{"background":"#F3F3F3","background_gradient":"","text":"#121212","button":"#121212","button_label":"#F3F3F3","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-3":{"settings":{"background":"#242833","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#000000","secondary_button_label":"#FFFFFF","shadow":"#121212"}},"scheme-4":{"settings":{"background":"#121212","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#121212","secondary_button_label":"#FFFFFF","shadow":"#121212"}},"scheme-5":{"settings":{"background":"#334FB4","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#334FB4","secondary_button_label":"#FFFFFF","shadow":"#121212"}}},"type_header_font":"assistant_n4","heading_scale":100,"type_body_font":"assistant_n4","body_scale":100,"page_width":1200,"spacing_sections":0,"spacing_grid_horizontal":8,"spacing_grid_vertical":8,"animations_reveal_on_scroll":true,"animations_hover_elements":"none","buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":0,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":4,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":4,"inputs_shadow_blur":5,"card_style":"standard","card_image_padding":0,"card_text_alignment":"left","card_color_scheme":"scheme-2","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"scheme-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"scheme-2","blog_card_border_thickness":0,"blog_card_border_opacity":10,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":5,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"bottom left","badge_corner_radius":40,"sale_badge_color_scheme":"scheme-4","sold_out_badge_color_scheme":"scheme-3","brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_twitter_link":"","social_facebook_link":"","social_pinterest_link":"","social_instagram_link":"","social_tiktok_link":"","social_tumblr_link":"","social_snapchat_link":"","social_youtube_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":false,"currency_code_enabled":true,"cart_type":"notification","show_vendor":false,"show_cart_note":false,"cart_drawer_collection":"","cart_color_scheme":"scheme-1","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"scheme-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"scheme-1"}}}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "logo": "shopify://shop_images/3a1f3d02a41c1fb11b46d6060449761ca37f9748.png",
+    "logo_width": 150,
+    "favicon": "shopify://shop_images/Diseno_sin_titulo_17.png",
+    "type_header_font": "assistant_n4",
+    "heading_scale": 100,
+    "type_body_font": "assistant_n4",
+    "body_scale": 100,
+    "page_width": 1600,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "animations_reveal_on_scroll": true,
+    "animations_hover_elements": "none",
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": -8,
+    "inputs_shadow_blur": 5,
+    "card_style": "card",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "scheme-1",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "scheme-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "scheme-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 5,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "bottom right",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "scheme-4",
+    "sold_out_badge_color_scheme": "scheme-3",
+    "brand_headline": "",
+    "brand_description": "<p></p>",
+    "brand_image_width": 100,
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "currency_code_enabled": true,
+    "cart_type": "notification",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "cart_drawer_collection": "",
+    "cart_color_scheme": "scheme-1",
+    "media_grouping_option": "Colour",
+    "sections": {
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "color_scheme": "scheme-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "scheme-1"
+        }
+      },
+      "tiendas-santorini": {
+        "type": "tiendas-santorini",
+        "blocks": {
+          "store_VUdmAD": {
+            "type": "store",
+            "settings": {
+              "kind": "physical",
+              "image": "shopify://shop_images/Hacienda_Santa_Barbara_-_SANTORINI.jpg_1.jpg",
+              "title": "SANTORINI HACIENDA",
+              "address": "Carrera 7 # 115 – 60",
+              "local": "D-104",
+              "phone": "+57 3228574393",
+              "email": "local.h.moda@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/VjXE2kNfFqXzkaN57"
+            }
+          },
+          "store_tUc83z": {
+            "type": "store",
+            "settings": {
+              "kind": "physical",
+              "image": "shopify://shop_images/plaza_de_las_americas_-_SANTORINI_jpg.jpg",
+              "title": "SANTORINI PLAZA AMERICAS",
+              "address": "Carrera 71d #6 – 94 sur",
+              "local": "1230",
+              "phone": "+57 3228574393",
+              "email": "local.americas@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/kUeCo3mWfeE1MSN1A"
+            }
+          },
+          "store_6YyYPE": {
+            "type": "store",
+            "settings": {
+              "kind": "physical",
+              "image": "shopify://shop_images/Galeria_-_SANTORINI_jpg.jpg",
+              "title": "SANTORINI GALERIAS",
+              "address": "Calle 53B No. 25 – 21",
+              "local": "1-103 Entrada 8",
+              "phone": "+57 3228574393",
+              "email": "local.outlet@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/Xpdw8tAxvDfvFMeg7"
+            }
+          },
+          "store_iDBDja": {
+            "type": "store",
+            "settings": {
+              "kind": "physical",
+              "image": "shopify://shop_images/plaza_central_-_SANTORINI_jpg.jpg",
+              "title": "SANTORINI PLAZA CENTRAL",
+              "address": "Carrera 65 # 11 – 30",
+              "local": "Local 101",
+              "phone": "+57 3228574393",
+              "email": "local.plazacentral@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/ThY7oXKeGZXk7CbSA"
+            }
+          },
+          "store_QLxCFz": {
+            "type": "store",
+            "settings": {
+              "kind": "physical",
+              "image": "shopify://shop_images/unicentro_-_SANTORINI_jpg.jpg",
+              "title": "SANTORINI UNICENTRO",
+              "address": "Av 15 # 124 – 30",
+              "local": "2-249",
+              "phone": "+57 3228574393",
+              "email": "local.u.diferente@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/Rd6PCPmQYBiyxLD87"
+            }
+          },
+          "store_fgarhd": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_fontanar.jpg_1.jpg",
+              "title": "FALABELLA FONTANAR",
+              "address": "Cajicá - Chía #Km 2.5, Chía, Cundinamarca",
+              "local": "",
+              "phone": "",
+              "email": "falabella_fontanar@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/jnAqz65Ka6hSqW1G7"
+            }
+          },
+          "store_t9gbKB": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_santafe_jpg.jpg",
+              "title": "FALABELLA SANTAFE",
+              "address": "Cl. 185 #45-3, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_santafe@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/UzwRHtSPWTEp5LLj6"
+            }
+          },
+          "store_dPjgp6": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Parque_la_Colina_jpg.jpg",
+              "title": "FALABELLA COLINA",
+              "address": "Cra. 58d #146-51, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_colina@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/XyJyZhDQy9LixU6V8"
+            }
+          },
+          "store_iFLywY": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Centro_Mayor_jpg.jpg",
+              "title": "FALABELLA CENTRO MAYOR",
+              "address": "Cl. 38A Sur #34d-51, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_centromayor@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/hKuT8x9bU9yBFfif8"
+            }
+          },
+          "store_48a9gb": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Titan_jpg.jpg",
+              "title": "FALABELLA TITAN",
+              "address": "Cra. 72 #80-94, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_titan@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/EUzVqcM2afgutwdu5"
+            }
+          },
+          "store_34qG3y": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Plaza_Imperial_jpg.jpg",
+              "title": "FALABELLA PLAZA IMPERIAL",
+              "address": "con, Cra. 104 #148 - 07 Av. Ciudad de Cali, Ac 145, Cundinamarca",
+              "local": "",
+              "phone": "",
+              "email": "falabella_sandiego@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/A4YB2FzpT8nJJV5t7"
+            }
+          },
+          "store_HkVLbL": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Galerias_jpg.jpg",
+              "title": "FALABELLA GALERIAS",
+              "address": "Cl. 53b #25 - 21, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_galerias@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/4YP9vnsg6ZzoVKkF6"
+            }
+          },
+          "store_8teJKb": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Plaza_Central_jpg.jpg",
+              "title": "FALABELLA PLAZA CENTRAL",
+              "address": "Calle 13 con Carrera 62, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_plazacentral@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/Yjy18Upcd3d4yLb78"
+            }
+          },
+          "store_KiTkpY": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Multiplaza_jpg.jpg",
+              "title": "FALABELLA MULTIPLAZA",
+              "address": "Cra. 72 #17a-63, Bogotá",
+              "local": "",
+              "phone": "",
+              "email": "falabella_multiplaza@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/4VaZkrwKS59cNLWq6"
+            }
+          },
+          "store_bHpPet": {
+            "type": "store",
+            "settings": {
+              "kind": "falabella",
+              "image": "shopify://shop_images/falabella_-_santorini_Hayuelos_jpg.jpg",
+              "title": "FALABELLA HAYUELOS",
+              "address": "Cl 20 #82 - 52, Fontibón, Bogotá, Cundinamarca",
+              "local": "",
+              "phone": "",
+              "email": "falabella_hayuelos@santorini.com.co",
+              "map_url": "https://maps.app.goo.gl/JPnGTm5xDAvago1g6"
+            }
+          }
+        },
+        "block_order": [
+          "store_VUdmAD",
+          "store_tUc83z",
+          "store_6YyYPE",
+          "store_iDBDja",
+          "store_QLxCFz",
+          "store_fgarhd",
+          "store_t9gbKB",
+          "store_dPjgp6",
+          "store_iFLywY",
+          "store_48a9gb",
+          "store_34qG3y",
+          "store_HkVLbL",
+          "store_8teJKb",
+          "store_KiTkpY",
+          "store_bHpPet"
+        ],
+        "settings": {
+          "heading": "Nuestras tiendas",
+          "subheading": "Encuentra tu tienda SANTORINI más cercana.",
+          "physical_title": "Tiendas SANTORINI",
+          "falabella_title": "Puntos Falabella"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "18131037017812181619": {
+        "type": "shopify://apps/mailchimp-email-sms/blocks/mailchimp_for_shopify_script/e3b67dce-fd41-4b61-b3cf-961c12344cde",
+        "disabled": false,
+        "settings": {}
+      }
+    },
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#f3f3f3",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#f3f3f3",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#242833",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#000000",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#121212",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#334fb4",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Dawn": {
+      "logo_width": 90,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#F3F3F3",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#F3F3F3",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-5": {
+          "settings": {
+            "background": "#334FB4",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#334FB4",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        }
+      },
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "scheme-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "scheme-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "scheme-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 5,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "scheme-4",
+      "sold_out_badge_color_scheme": "scheme-3",
+      "brand_headline": "",
+      "brand_description": "<p></p>",
+      "brand_image_width": 100,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
+      "cart_color_scheme": "scheme-1",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "scheme-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "scheme-1"
+          }
+        }
+      }
+    }
+  }
+}
