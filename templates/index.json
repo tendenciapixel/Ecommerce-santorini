@@ -12,6 +12,19 @@
     "banner_responsive_ttEqg9": {
       "type": "banner-responsive",
       "blocks": {
+        "slide_aHRCYf": {
+          "type": "slide",
+          "settings": {
+            "image_pc": "shopify://shop_images/Pasarelas-de-pagoo-Snatorini.jpg",
+            "image_mobile": "shopify://shop_images/Pasarelas-de-pagoo-Snatorini_movil.jpg",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "slide_jq3tbB": {
           "type": "slide",
           "settings": {
@@ -27,6 +40,7 @@
         }
       },
       "block_order": [
+        "slide_aHRCYf",
         "slide_jq3tbB"
       ],
       "name": "Banner principal carrusel",
