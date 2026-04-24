@@ -1,0 +1,251 @@
+/* =============================================
+   COUNTDOWN BANNER — Dawn Theme
+   ============================================= */
+
+.countdown-banner {
+  position: relative;
+  width: 100%;
+  background-color: var(--banner-bg, #050d1a);
+  color: var(--text-color, #fff);
+  overflow: hidden;
+  padding: 60px 20px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glow decorativo superior */
+.cb-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse at center, rgba(59, 110, 248, 0.35) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.cb-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título */
+.cb-title {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--text-color, #fff);
+  text-shadow:
+    0 0 20px rgba(59, 110, 248, 0.6),
+    0 0 60px rgba(59, 110, 248, 0.3);
+}
+
+/* ---- Timer ---- */
+.cb-timer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cb-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.cb-card {
+  background: var(--accent-color, #3b6ef8);
+  border-radius: 12px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 24px rgba(59, 110, 248, 0.45),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.1s ease;
+}
+
+/* Línea divisora estilo flip-clock */
+.cb-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(0,0,0,0.25);
+}
+
+.cb-num {
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.cb-label {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+.cb-sep {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color, #3b6ef8);
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Animación de flip al cambiar */
+@keyframes cb-flip {
+  0%   { transform: scaleY(1); }
+  40%  { transform: scaleY(0.85); }
+  100% { transform: scaleY(1); }
+}
+
+.cb-card.cb-flip {
+  animation: cb-flip 0.3s ease;
+}
+
+/* ---- Texto oferta ---- */
+.cb-offer-text {
+  /* font-size: clamp(0.9rem, 2vw, 1.05rem); */
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.7);
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ---- Botón ---- */
+.cb-btn {
+  display: inline-block;
+  background: var(--btn-bg, #e8386d);
+  color: var(--btn-text, #fff);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  border-radius: 50px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 4px 20px rgba(232, 56, 109, 0.45);
+}
+
+.cb-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(232, 56, 109, 0.55);
+  filter: brightness(1.1);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+  .cb-card {
+    width: 58px;
+    height: 58px;
+  }
+
+  .cb-num {
+    font-size: 1.5rem;
+  }
+
+  .cb-timer {
+    /* gap: 8px; */
+     display: flex;
+  flex-wrap: wrap; /* 👈 permite que no se rompa */
+  justify-content: center;
+  }
+
+  .cb-sep {
+    font-size: 1.5rem;
+  }
+}
+
+/* Estado "expirado" */
+.cb-expired-msg {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+
+  /* Título */
+  .cb-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* Números del contador */
+  .cb-num {
+    font-size: 28px;
+  }
+
+  /* Cards del contador (los cuadritos) */
+  .cb-card {
+    padding: 10px;
+    min-width: 55px;
+  }
+
+  /* Labels (Días, Horas, etc) */
+  .cb-label {
+    font-size: 12px;
+  }
+
+  /* Separadores ":" */
+  .cb-sep {
+    font-size: 20px;
+  }
+
+  /* Texto de oferta */
+  .cb-offer-text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Botón */
+  .cb-btn {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Contenedor del timer (IMPORTANTE para alineación) */
+  .cb-timer {
+    gap: 6px;
+    justify-content: center;
+  }
+
+  /* Cada bloque del timer */
+  .cb-unit {
+    align-items: center;
+  }
+}
