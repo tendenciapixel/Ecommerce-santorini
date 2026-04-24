@@ -1,0 +1,161 @@
+{{ 'countdown-banner.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="countdown-banner"
+  style="
+    --banner-bg: {{ section.settings.background_color }};
+    --accent-color: {{ section.settings.accent_color }};
+    --text-color: {{ section.settings.text_color }};
+    --btn-bg: {{ section.settings.button_color }};
+    --btn-text: {{ section.settings.button_text_color }};
+  "
+  data-end-date="{{ section.settings.end_date }}"
+  data-start-date="{{ section.settings.start_date }}"
+>
+  <!-- Glow decorativo -->
+  <div class="cb-glow"></div>
+
+  <div class="cb-inner">
+
+    {%- if section.settings.title != blank -%}
+      <h2 class="cb-title">{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <!-- Temporizador -->
+    <div class="cb-timer" id="cb-timer-{{ section.id }}">
+      <div class="cb-unit">
+        <div class="cb-card"><span class="cb-num" data-unit="days">00</span></div>
+        <span class="cb-label"> Días </span>
+      </div>
+      <div class="cb-sep">:</div>
+      <div class="cb-unit">
+        <div class="cb-card"><span class="cb-num" data-unit="hours">00</span></div>
+        <span class="cb-label">Horas</span>
+      </div>
+      <div class="cb-sep">:</div>
+      <div class="cb-unit">
+        <div class="cb-card"><span class="cb-num" data-unit="minutes">00</span></div>
+        <span class="cb-label">Minutos</span>
+      </div>
+      <div class="cb-sep">:</div>
+      <div class="cb-unit">
+        <div class="cb-card"><span class="cb-num" data-unit="seconds">00</span></div>
+        <span class="cb-label">Segundos</span>
+      </div>
+    </div>
+
+    {%- if section.settings.offer_text != blank -%}
+      <p class="cb-offer-text">{{ section.settings.offer_text }}</p>
+    {%- endif -%}
+{%- if section.settings.button_label != blank -%}
+  {%- if section.settings.button_collection != blank -%}
+    <a href="{{ section.settings.button_collection.url }}" class="cb-btn">
+      {{- section.settings.button_label -}}
+    </a>
+  {%- else -%}
+    <a href="/collections" class="cb-btn">
+      {{- section.settings.button_label -}}
+    </a>
+  {%- endif -%}
+{%- endif -%}
+
+  </div>
+</section>
+
+<script src="{{ 'countdown-banner.js' | asset_url }}" defer></script>
+
+
+{% schema %}
+{
+  "name": "Countdown Banner",
+  "tag": "section",
+  "class": "countdown-banner-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "⏱ Fechas del temporizador"
+    },
+    {
+      "type": "text",
+      "id": "start_date",
+      "label": "Fecha de inicio (YYYY-MM-DDTHH:MM:SS)",
+      "info": "Ejemplo: 2025-06-01T00:00:00. El banner aparece desde esta fecha.",
+      "default": "2025-01-01T00:00:00"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "Fecha de fin (YYYY-MM-DDTHH:MM:SS)",
+      "info": "Ejemplo: 2025-06-30T23:59:59. El temporizador cuenta hasta aquí.",
+      "default": "2025-12-31T23:59:59"
+    },
+    {
+      "type": "header",
+      "content": "📝 Contenido"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título principal",
+      "default": "COMING SOON"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_text",
+      "label": "Texto del objetivo / oferta",
+      "default": "No te pierdas nuestra promoción exclusiva. ¡Descuentos increíbles te esperan!"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Texto del botón",
+      "default": "Ver colección"
+    },
+    {
+      "type": "collection",
+      "id": "button_collection",
+      "label": "Colección destino del botón"
+    },
+    {
+      "type": "header",
+      "content": "🎨 Colores"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Color de fondo",
+      "default": "#050d1a"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Color de acento (cards del timer)",
+      "default": "#3b6ef8"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color del texto",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Color del botón",
+      "default": "#e8386d"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Color del texto del botón",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Banner",
+      "category": "Promotional"
+    }
+  ]
+}
+{% endschema %}
