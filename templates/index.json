@@ -27,6 +27,7 @@
         },
         "slide_jq3tbB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_pc": "shopify://shop_images/Lluvias-10_-off.jpg_1.jpg",
             "image_mobile": "shopify://shop_images/back_to_city_Banner_mobil_jpg.jpg",

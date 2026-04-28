@@ -56,6 +56,7 @@
       "blocks": {
         "menu_cta_ACp4Fb": {
           "type": "menu_cta",
+          "disabled": true,
           "settings": {
             "text": "Para estas lluvias -10% dto",
             "url": "shopify://collections/back-to-city",
