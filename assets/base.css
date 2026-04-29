@@ -2981,6 +2981,28 @@ details-disclosure > details {
   }
 }
 
+/*TALLAS PRODUCTO INICIO*/
+.product-sizes {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.product-sizes .size {
+  font-size: 12px;
+  padding: 4px 6px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.product-sizes .size--soldout {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+/*TALLAS PRODUCTO FIN*/
+
+
 .badge {
   border: 1px solid transparent;
   display: inline-block;
