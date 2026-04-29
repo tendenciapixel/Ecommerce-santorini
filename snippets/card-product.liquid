@@ -223,6 +223,31 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+{% comment %} MOSTRAR TALLAS  {% endcomment %}
+{% if card_product.options_with_values.size > 0 %}
+  {% for option in card_product.options_with_values %}
+    {% if option.name == 'Talla' or option.name == 'Size' %}
+      <div class="product-sizes">
+        {% for value in option.values %}
+          {% assign variant_available = false %}
+          
+          {% for variant in card_product.variants %}
+            {% if variant.available and variant.title contains value %}
+              {% assign variant_available = true %}
+            {% endif %}
+          {% endfor %}
+
+          <span class="size {% unless variant_available %}size--soldout{% endunless %}">
+            {{ value }}
+          </span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% comment %} MOSTRAR TALLAS  {% endcomment %}
+
+
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                 {% liquid
