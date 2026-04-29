@@ -44,6 +44,7 @@
         "slide_aHRCYf",
         "slide_jq3tbB"
       ],
+      "disabled": true,
       "name": "Banner principal carrusel",
       "settings": {
         "autoplay": true,
@@ -79,7 +80,6 @@
     },
     "video_san_8cin7R": {
       "type": "video-san",
-      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
