@@ -11,52 +11,7 @@
   "sections": {
     "banner_responsive_ttEqg9": {
       "type": "banner-responsive",
-      "blocks": {
-        "slide_aHRCYf": {
-          "type": "slide",
-          "settings": {
-            "image_pc": "shopify://shop_images/Compralos._Disfrutalos._Pagalos_despues.png",
-            "image_mobile": "shopify://shop_images/Pasarelas-de-pagoo-Snatorini_movil.jpg",
-            "link": "",
-            "title": "",
-            "subtitle": "",
-            "button_text": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "slide_QyHkqN": {
-          "type": "slide",
-          "settings": {
-            "image_pc": "shopify://shop_images/WhatsApp_Image_2026-04-30_at_1.56.42_PM.jpg",
-            "image_mobile": "shopify://shop_images/Compralos._Disfrutalos._Pagalos_despues_1080_x_1350_px.png",
-            "link": "https://www.santorini.com.co/collections/sneaker-deportivo-copia",
-            "title": "",
-            "subtitle": "",
-            "button_text": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "slide_YbWQfX": {
-          "type": "slide",
-          "settings": {
-            "image_pc": "shopify://shop_images/Compralos._Disfrutalos._Pagalos_despues.png",
-            "image_mobile": "shopify://shop_images/SANTORINI_Compralos._Disfrutalos._Pagalos_despues_movil.png",
-            "link": "",
-            "title": "",
-            "subtitle": "",
-            "button_text": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "slide_aHRCYf",
-        "slide_QyHkqN",
-        "slide_YbWQfX"
-      ],
+      "disabled": true,
       "name": "Banner principal carrusel",
       "settings": {
         "autoplay": true,

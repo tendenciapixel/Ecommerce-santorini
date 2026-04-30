@@ -90,6 +90,38 @@
     },
     "banner_responsive_XPKFYc": {
       "type": "banner-responsive",
+      "blocks": {
+        "slide_PqgEHV": {
+          "type": "slide",
+          "settings": {
+            "image_pc": "shopify://shop_images/Compralos._Disfrutalos._Pagalos_despues.png",
+            "image_mobile": "shopify://shop_images/SANTORINI_Compralos._Disfrutalos._Pagalos_despues_movil.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "slide_LtDcjd": {
+          "type": "slide",
+          "settings": {
+            "image_pc": "shopify://shop_images/WhatsApp_Image_2026-04-30_at_1.56.42_PM.jpg",
+            "image_mobile": "shopify://shop_images/Compralos._Disfrutalos._Pagalos_despues_1080_x_1350_px.png",
+            "link": "",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slide_PqgEHV",
+        "slide_LtDcjd"
+      ],
       "name": "Banner principal carrusel",
       "settings": {
         "autoplay": true,
