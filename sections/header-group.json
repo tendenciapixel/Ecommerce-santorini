@@ -87,10 +87,20 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "banner_responsive_XPKFYc": {
+      "type": "banner-responsive",
+      "name": "Banner principal carrusel",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "heading_font": "brand"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "banner_responsive_XPKFYc"
   ]
 }

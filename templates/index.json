@@ -80,6 +80,7 @@
     },
     "video_san_8cin7R": {
       "type": "video-san",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
@@ -139,12 +140,12 @@
         "slide_crT48x": {
           "type": "slide",
           "settings": {
-            "image_pc": "shopify://shop_images/Banner_Principal.jpg",
+            "image_pc": "shopify://shop_images/WhatsApp_Image_2026-04-30_at_1.56.42_PM.jpg",
             "image_mobile": "shopify://shop_images/hero_-_movil_jpg.jpg",
-            "link": "",
-            "title": "Calzado elegante y cómodo para tu día a día",
-            "subtitle": "Diseñados para mujeres que buscan estilo sin sacrificar comodidad",
-            "button_text": "EXPLORAR COLECCIÓN",
+            "link": "https://www.santorini.com.co/collections/sneaker-deportivo-copia",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
             "overlay_color": "#f3f3f3",
             "overlay_opacity": 0
           }
