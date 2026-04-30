@@ -12,6 +12,18 @@
     "banner_responsive_ttEqg9": {
       "type": "banner-responsive",
       "blocks": {
+        "slide_QyHkqN": {
+          "type": "slide",
+          "settings": {
+            "image_pc": "shopify://shop_images/WhatsApp_Image_2026-04-30_at_1.56.42_PM.jpg",
+            "link": "https://www.santorini.com.co/collections/sneaker-deportivo-copia",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "slide_aHRCYf": {
           "type": "slide",
           "settings": {
@@ -41,10 +53,10 @@
         }
       },
       "block_order": [
+        "slide_QyHkqN",
         "slide_aHRCYf",
         "slide_jq3tbB"
       ],
-      "disabled": true,
       "name": "Banner principal carrusel",
       "settings": {
         "autoplay": true,
@@ -137,19 +149,6 @@
     "banner_responsive_yz9PXi": {
       "type": "banner-responsive",
       "blocks": {
-        "slide_crT48x": {
-          "type": "slide",
-          "settings": {
-            "image_pc": "shopify://shop_images/WhatsApp_Image_2026-04-30_at_1.56.42_PM.jpg",
-            "image_mobile": "shopify://shop_images/hero_-_movil_jpg.jpg",
-            "link": "https://www.santorini.com.co/collections/sneaker-deportivo-copia",
-            "title": "",
-            "subtitle": "",
-            "button_text": "",
-            "overlay_color": "#f3f3f3",
-            "overlay_opacity": 0
-          }
-        },
         "slide_kPdW6k": {
           "type": "slide",
           "disabled": true,
@@ -166,7 +165,6 @@
         }
       },
       "block_order": [
-        "slide_crT48x",
         "slide_kPdW6k"
       ],
       "name": "Banner Responsive",
