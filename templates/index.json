@@ -152,6 +152,7 @@
         },
         "slide_kPdW6k": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image_pc": "shopify://shop_images/Banner_Principal.jpg",
             "image_mobile": "shopify://shop_images/hero_-_movil_jpg.jpg",
@@ -168,7 +169,6 @@
         "slide_crT48x",
         "slide_kPdW6k"
       ],
-      "disabled": true,
       "name": "Banner Responsive",
       "settings": {
         "autoplay": true,
