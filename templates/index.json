@@ -12,6 +12,19 @@
     "banner_responsive_KqQ9L4": {
       "type": "banner-responsive",
       "blocks": {
+        "slide_DWBCci": {
+          "type": "slide",
+          "settings": {
+            "image_pc": "shopify://shop_images/BANNER_SANTORINI.png",
+            "image_mobile": "shopify://shop_images/POST_SANTORINI.png",
+            "link": "shopify://collections/tenis-mujer",
+            "title": "",
+            "subtitle": "",
+            "button_text": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "slide_P6rJzy": {
           "type": "slide",
           "settings": {
@@ -40,6 +53,7 @@
         }
       },
       "block_order": [
+        "slide_DWBCci",
         "slide_P6rJzy",
         "slide_amV3fK"
       ],
