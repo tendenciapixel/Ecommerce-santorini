@@ -125,7 +125,7 @@
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "",
-        "video_link": "shopify://collections/correas",
+        "video_link": "shopify://collections/cinturones",
         "video_mobile": "shopify://files/videos/ACCESORIOS SANTORINI-mobil.mp4",
         "heading_size": "h1",
         "enable_video_looping": false,
@@ -643,7 +643,7 @@
         "featured_collection_H77PJt": {
           "type": "featured_collection",
           "settings": {
-            "collection": "correas"
+            "collection": "cinturones"
           }
         }
       },
